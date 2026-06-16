@@ -48,7 +48,7 @@ class UnifiedDigitalTwin:
 
     def step(self, dt):
         """
-        STRICT SIMULATION LOOP ORDER:
+        STRICT SIMULATION LOOP ORDER:    This shouldnt be broken, so handle it cautiously, else...
         1. Apply injected physical fault parameters
         2. Solve mechanical ODE (omega update)
         3. Compute slip
